@@ -1,0 +1,12 @@
+{
+  "name": "toutf8",
+  "version": "1.0.0",
+  "description": "Convert any input to UTF-8 by detecting its encoding",
+  "main": "index.js",
+  "author": "Chris Buckley <chris@cmbuckley.co.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "ced": "^1.0.0",
+    "iconv": "^2.3.5"
+  }
+}
