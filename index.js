@@ -5,4 +5,5 @@ const fs = require('fs'),
 const file = fs.readFileSync(0),
       iconv = new Iconv(ced(file), 'utf8');
 
+// convert file contents to UTF-8
 process.stdout.write(iconv.convert(file));
