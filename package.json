@@ -2,12 +2,24 @@
   "name": "toutf8",
   "version": "1.0.0",
   "description": "Convert any input to UTF-8 by detecting its encoding",
-  "main": "index.js",
-  "author": "Chris Buckley <chris@cmbuckley.co.uk>",
+  "keywords": [
+    "character",
+    "encoding",
+    "detection",
+    "utf8"
+  ],
+  "homepage": "https://cmbuckley.co.uk/toutf8/",
+  "bugs": "https://github.com/cmbuckley/toutf8/issues",
   "license": "MIT",
+  "author": "Chris Buckley <chris@cmbuckley.co.uk>",
+  "files": [
+    "index.js"
+  ],
+  "bin": "./index.js",
+  "repository": "cmbuckley/toutf8",
   "dependencies": {
     "ced": "^1.0.0",
     "iconv": "^2.3.5"
   },
-  "bin": "./index.js"
+  "engines": ">=8"
 }
