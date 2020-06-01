@@ -8,5 +8,6 @@
   "dependencies": {
     "ced": "^1.0.0",
     "iconv": "^2.3.5"
-  }
+  },
+  "bin": "./index.js"
 }

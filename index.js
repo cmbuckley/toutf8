@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs'),
       ced = require('ced'),
       Iconv = require('iconv').Iconv;
