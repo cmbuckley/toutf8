@@ -1,5 +1,5 @@
 {
-  "name": "toutf8",
+  "name": "@cmbuckley/toutf8",
   "version": "1.0.0",
   "description": "Convert any input to UTF-8 by detecting its encoding",
   "keywords": [
@@ -16,7 +16,9 @@
     "index.js",
     "doc/toutf8.1"
   ],
-  "bin": "./index.js",
+  "bin": {
+    "toutf8": "./index.js"
+  },
   "man": "./doc/toutf8.1",
   "repository": "cmbuckley/toutf8",
   "scripts": {
