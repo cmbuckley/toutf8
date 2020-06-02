@@ -13,13 +13,22 @@
   "license": "MIT",
   "author": "Chris Buckley <chris@cmbuckley.co.uk>",
   "files": [
-    "index.js"
+    "index.js",
+    "doc/toutf8.1"
   ],
   "bin": "./index.js",
+  "man": "./doc/toutf8.1",
   "repository": "cmbuckley/toutf8",
+  "scripts": {
+    "prepack": "marked-man doc/toutf8.1.md > doc/toutf8.1"
+  },
   "dependencies": {
     "ced": "^1.0.0",
     "iconv": "^2.3.5"
+  },
+  "devDependencies": {
+    "marked": "^0.7.0",
+    "marked-man": "^0.7.0"
   },
   "engines": ">=8"
 }
