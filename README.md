@@ -10,7 +10,7 @@ to guess the encoding, before converting from that encoding to UTF-8.
 Install with [npm](https://www.npmjs.com/) globally:
 
 ```bash
-npm install --global toutf8
+npm install --global @cmbuckley/toutf8
 ```
 
 ## Usage
