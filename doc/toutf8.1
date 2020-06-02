@@ -1,0 +1,16 @@
+.TH "TOUTF8" "1" "June 2020" "" ""
+.SH "NAME"
+\fBtoutf8\fR \- Convert any input to UTF\-8 by detecting its encoding
+.SH SYNOPSIS
+.P
+\fBtoutf8\fP [ \fIinputfile\fR ]\.\.\.
+.SH DESCRIPTION
+.P
+The \fBtoutf8\fP program detects the most likely character encoding of text and
+converts it to UTF\-8\. All the \fIinputfile\fR arguments will be read and converted\.
+If no input files are provides, standard input is used\. The converted text is
+printed to standard output\.
+.SH EXAMPLES
+.P
+\fBtoutf8 < random\-encoding\.txt > utf8\.txt\fP
+
