@@ -22,7 +22,9 @@
   "man": "./doc/toutf8.1",
   "repository": "cmbuckley/toutf8",
   "scripts": {
-    "prepack": "marked-man doc/toutf8.1.md > doc/toutf8.1"
+    "doc": "marked-man doc/toutf8.1.md > doc/toutf8.1",
+    "version": "git commit -am \"Release $npm_package_version\" && git checkout HEAD^{} && npm run doc && git add -f doc",
+    "postversion": "git push --tags && git checkout -"
   },
   "dependencies": {
     "ced": "^1.0.0",
