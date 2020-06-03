@@ -15,6 +15,10 @@ npm install --global @cmbuckley/toutf8
 
 ## Usage
 
+```bash
+toutf8 [inputfile]...
+```
+
 The `toutf8` program detects the most likely character encoding of text and
 converts it to UTF-8. All the _inputfile_ arguments will be read and converted.
 If no input files are provides, standard input is used. The converted text is
