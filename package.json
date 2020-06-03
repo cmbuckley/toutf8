@@ -24,7 +24,8 @@
   "scripts": {
     "doc": "marked-man doc/toutf8.1.md > doc/toutf8.1",
     "version": "git commit -am \"Release $npm_package_version\" && git checkout HEAD^{} && npm run doc && git add -f doc",
-    "postversion": "git push --tags && git checkout -"
+    "postversion": "npm publish --access=public && git checkout -",
+    "postpublish": "git push --tags"
   },
   "dependencies": {
     "ced": "^1.0.0",
