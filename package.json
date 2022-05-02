@@ -22,7 +22,7 @@
   "man": "./doc/toutf8.1",
   "repository": "cmbuckley/toutf8",
   "scripts": {
-    "doc": "marked-man doc/toutf8.1.md > doc/toutf8.1",
+    "doc": "node doc/generate doc/toutf8.1.md > doc/toutf8.1",
     "version": "git commit -am \"Release $npm_package_version\" && git checkout HEAD^{} && npm run doc && git add -f doc",
     "postversion": "npm publish --access=public && git checkout -",
     "postpublish": "git push --tags"
@@ -32,8 +32,7 @@
     "iconv": "^2.3.5"
   },
   "devDependencies": {
-    "marked": "^0.7.0",
-    "marked-man": "^0.7.0"
+    "readme-to-man-page": "^0.6.0"
   },
   "engines": ">=8"
 }
