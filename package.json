@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "ced": "^1.0.0",
-    "iconv": "^2.3.5"
+    "iconv": "^3.0.1"
   },
   "devDependencies": {
     "readme-to-man-page": "^0.6.0"
