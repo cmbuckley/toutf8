@@ -28,7 +28,7 @@
     "postpublish": "git push --tags"
   },
   "dependencies": {
-    "ced": "^1.0.0",
+    "ced": "^2.0.0",
     "iconv": "^3.0.1"
   },
   "devDependencies": {
