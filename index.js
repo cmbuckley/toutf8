@@ -2,7 +2,7 @@
 
 const fs = require('fs'),
       ced = require('ced'),
-      Iconv = require('iconv').Iconv;
+      {Iconv} = require('iconv');
 
 let files = process.argv.slice(2);
 
@@ -19,7 +19,11 @@ let files = process.argv.slice(2);
         throw err;
     }
 
-    // convert file contents to UTF-8
-    const iconv = new Iconv(ced(data), 'utf8');
-    process.stdout.write(iconv.convert(data));
+    try {
+        // convert file contents to UTF-8
+        const iconv = new Iconv(ced(data), 'utf8');
+        process.stdout.write(iconv.convert(data));
+    } catch (err) {
+        console.error('Error:', err.message);
+    }
 });
