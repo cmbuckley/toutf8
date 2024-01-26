@@ -1,6 +1,6 @@
 {
   "name": "@cmbuckley/toutf8",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Convert any input to UTF-8 by detecting its encoding",
   "keywords": [
     "character",
