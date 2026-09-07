@@ -34,6 +34,9 @@
   "devDependencies": {
     "readme-to-man-page": "^0.6.0"
   },
+  "overrides": {
+    "brace-expansion": "1.1.18"
+  },
   "engines": {
     "node": ">=20"
   }
