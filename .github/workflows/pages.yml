@@ -4,6 +4,10 @@ on:
     branches: gh-pages
   repository_dispatch:
     types: [pages]
+  release:
+    types:
+      - published
+      - deleted
 
 permissions:
   contents: read
